@@ -50,12 +50,3 @@ export default function TimerDisplay({
     </div>
   )
 };
-/*learn from the expert
-o_o >_< T_T o_O -_- 
-+_+ *_* ^_^ @_@ 
-
-yup i m dumb
-look at these cute emojis
-jdejioeejdiejowdiieowoidjwoedjwoejdwoidjow yeh kya bakwas likha hai
-vhfdivhiihvdfihfhjbbfkjshd idiot
- bye bye*/
