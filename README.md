@@ -30,3 +30,8 @@ You can run it using:
 npm start
 ```
 
+## Authors
+
+1) Siddhid Saha 
+2) Suraiya Parween
+
