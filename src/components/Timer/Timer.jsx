@@ -4,7 +4,7 @@ import Button from './Button'
 import MuteToggle from './MuteToggle'
 import Settings from './Settings'
 import useSound from 'use-sound'
-import timesUpSfx from '../../assets/start.mp3'
+import timesUpSfx from '../../assets/end.mp3'
 
 export default function Timer() {
 

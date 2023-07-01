@@ -18,7 +18,6 @@
     width:100%;
     align-items: center;
     justify-content: center;
-    margin-top: 1rem;
 }
 .clockdisplay{
     display: -webkit-inline-flex;
@@ -43,13 +42,19 @@
     justify-content: space-between;
     width: 100%;
 }
-
+.aboutmain{
+    display: -webkit-inline-flex;
+    align-items: center;
+    justify-content: right;
+    margin-right: 2rem;
+    margin-left: 10rem;
+}
 .aboutbutton{
     display: flex;
     cursor: pointer;
     height:2rem;
     min-width: 5rem;
-    margin-left: 10rem;
+    margin-left: 0rem;
     margin-right: 3rem;
     align-items: center;
     justify-content: center;
@@ -77,6 +82,7 @@
     height: 100%;
 }
 .aboutcontent{
+    font-size: 18px;
     background-color: antiquewhite;
     margin: 10% auto;
     padding: 40px;
@@ -153,7 +159,7 @@
     margin-left: 5rem;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 0 35px rgba(0,0,0,0.8);
+    box-shadow: 0 0 35px rgba(222,217,217,0.609);
 }
 .timer_display{
     align-items:center;
@@ -216,8 +222,8 @@
 
 
 .p_pane, .overlay{
-    width: 100vw;
-    height: 100vh;
+    width: 100sw;
+    height: 100sh;
     top: 0;
     left: 0;
     right: 0;
@@ -369,3 +375,196 @@ input[type="number"]::-webkit-inner-spin-button:active{
 .i-time{
     background-color: antiquewhite !important;
 }
+
+.l_body{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    max-height: 40rem;
+    width: 100%;
+    gap: 10rem;
+}
+
+.spotify{
+    justify-content: center;
+    align-items: center;
+    margin-right: 5rem;
+    margin-left: 15rem;
+}
+
+iframe{
+    width: 300px;
+    height: 22rem;
+    border-radius: 12px;
+    border-color: #1db954;
+    box-shadow: 0 0 35px rgba(222,217,217,0.609);
+}
+
+.todo{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin:auto;
+}
+
+.task-wrapper{
+    background-color: #000;
+    max-height: 20rem;
+    min-height: 10rem;
+    max-width: 40rem;
+    min-width: 25rem;
+    padding: 30px;
+    box-sizing: border-box;
+    border: 1px solid #1db954;
+    border-radius: 20px;
+    margin-top: 4rem;
+    margin-bottom: 50px;
+    margin-left: 3rem;
+    margin-right: 5rem;
+    overflow-y: scroll ;
+    box-shadow: 0 0 35px rgba(222,217,217,0.609);
+}
+.header h1{
+    color: antiquewhite;
+    background-color: #000;
+    text-align: center;
+    margin: 30px 0;
+}
+
+.task-input{
+    outline:none;
+    height: 20px;
+    width: 260px;
+    padding:15px;
+    margin-right: 25px;
+    font-size: 20px;
+    color: antiquewhite;
+    background-color: #000;
+    border: 1px solid #1db954;
+    border-radius: 10px;
+}
+
+.button-add{
+    width:5rem;
+    padding: 15px 15px;
+    font-size: 20px;
+    border-radius: 10px;
+    border:0;
+    background-color: #1db954;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.list_items{
+    display: flex;
+    margin: 20px 0;
+    border: 1px solid #1db954;
+    border-radius: 10px;
+    padding: 10px;
+    min-height: 2.5rem;
+    max-height: 3.5rem;
+    background: #000 ;
+    min-width: 300px;
+}
+
+.complete-button,
+.edit-button,
+.delete-button{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 28px;
+    border-radius: 50%;
+}
+ .complete-button{
+    color: #1db954;
+    margin-right: 10px;
+    background-color: #000;
+ }
+ .edit-button{
+    color: yellow;
+    margin-right: 10px;
+    background-color: #000;
+ }
+ .delete-button{
+    color: #1db954;
+    background-color: #000;
+ }
+
+ .complete{
+    text-decoration-style: solid;
+    text-decoration-line: line-through;
+    text-decoration-color: #ff6c6c;
+    opacity:0.6;
+ }
+ .list{
+    width: 15rem;
+    background-color: #000;
+    border: none;
+    color: #ccc;
+    font-size: 20px;
+    padding-left: 10px;
+    padding-right: 15px;
+ }
+ input:focus,
+ button:focus{
+    outline:none;
+ }
+
+ @media (max-width: 1370px) {
+    .spotify{
+        margin-right: 17rem;
+    }
+    .l_body{
+        gap: 0;
+    }
+ }
+
+ @media (max-width: 1183px) {
+    .spotify{
+        margin-top: 2rem;
+    }
+    .t-wrapper{
+        margin-top: 3rem;
+        margin-left: 3.25rem;
+    }
+ }
+
+ @media (max-width: 740px) {
+    .l_body{
+        margin-left: 4rem;
+    }
+    .aboutbutton{
+        margin-right: 0;
+    }
+    .t-wrapper{
+        margin-left: 11rem;
+    }
+ }
+
+ @media (max-width: 400px) {
+    .clockdisplay{
+        margin-left: 0;
+        margin-right: 5.5rem;
+    }
+    .m-header{
+        margin-left: 5rem;
+    }
+    .l_body{
+        margin-left: 5.75rem;
+    }
+    .t-wrapper{
+        margin-right: 2rem;
+    }
+    .aboutcontent{
+        margin-left: 7rem;
+    }
+    .p_pane{
+        margin-left: 5rem;
+    }
+    .t-animation{
+        margin-top: 3rem;
+    }
+ }

@@ -2,6 +2,8 @@ import React from 'react'
 
 export default function TodoHeader() {
   return (
-    <div>TodoHeader</div>
+    <div className='header'>
+      <h1>Tasks to be done</h1>
+    </div>
   )
 }

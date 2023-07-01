@@ -1,7 +1,9 @@
 import './App.css';
 import MainHeader from './components/MainHeader/MainHeader';
 import Nav from './components/Nav/Aboutsection';
+import Spotify from './components/Spotify/Spotify';
 import Timer from './components/Timer/Timer';
+import Todo from './components/Todo/Todo';
 function App() {
   return (
     <div className="container">
@@ -14,6 +16,14 @@ function App() {
         </div>
         <div className='t-wrapper'>
           <Timer/>
+        </div>
+      </div>
+      <div className="l_body">
+        <div className='spotify'>
+          <Spotify/>
+        </div>
+        <div className='todo'>
+          <Todo/>
         </div>
       </div>
     </div>

@@ -18,9 +18,11 @@ export default function Nav() {
       <div className="clockdisplay">
         <ClockDisplay/>
       </div>
+      <div className="aboutmain">
       <button className="aboutbutton" onClick={handleClick}>
         About
       </button>
+      </div>
    
     { showabout && (
       <div id="myabout" className="model" onClick={handleClickout}>

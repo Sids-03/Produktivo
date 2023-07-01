@@ -1,7 +1,7 @@
 import React from 'react';
 import useSound from "use-sound";
-import startSfx from '../../assets/start.mp3';
-import pauseSfx from '../../assets/start.mp3';
+import startSfx from '../../assets/sp.mp3';
+import pauseSfx from '../../assets/sp.mp3';
 
 
 export default function TimerDisplay({
