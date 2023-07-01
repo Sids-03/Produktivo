@@ -6,7 +6,7 @@ const Todo = () => {
   const initialState = JSON.parse(localStorage.getItem("tasks")) || [];
   const [input, setInput]= useState("");
   const[tasks,setTasks]= useState(initialState);
-  const [editTask,setEditTask]=useState(null);
+  const [editTask,setEditTask] = useState(null);
   useEffect(() => {
     localStorage.setItem('tasks',JSON.stringify(tasks));
   },[tasks]);

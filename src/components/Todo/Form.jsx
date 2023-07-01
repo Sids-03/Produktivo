@@ -5,7 +5,7 @@ export default function Form({input, setInput, tasks, setTasks, editTask, setEdi
 
   const updateTask = (title, id, completed) => {
     const newTask = tasks.map((task)=>
-      task.id === id ? (title, id, completed) : task
+      task.id === id ? {title, id, completed} : task
     )
     setTasks(newTask);
     setEditTask("");
@@ -17,11 +17,9 @@ export default function Form({input, setInput, tasks, setTasks, editTask, setEdi
       setInput("");
     }
   },[setInput, editTask]);
-
   const onInputChange = (e) => {
     setInput(e.target.value);
   };
-
   const onFormSubmit = (e) =>{
     e.preventDefault();
     if(!editTask){
@@ -43,7 +41,7 @@ export default function Form({input, setInput, tasks, setTasks, editTask, setEdi
         value={input}
         required
         onChange={onInputChange}/>
-      <button className='button-add' type='submit'>
+      <button className='button-add' type="submit">
         {editTask ? "OK" : "ADD"}
       </button>
     </form>
